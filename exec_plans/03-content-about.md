@@ -44,13 +44,13 @@ Source content lives in `main.tex`:
 
 ## Acceptance Criteria
 
-- [ ] `#about` section contains title, abstract/summary, target
+- [x] `#about` section contains title, abstract/summary, target
       audience, and contents-level breakdown, all in accurate,
       web-appropriate prose derived from `main.tex`.
-- [ ] No leftover LaTeX syntax or escaped characters in rendered text.
-- [ ] Section is legible and scannable (not a wall of text) —
+- [x] No leftover LaTeX syntax or escaped characters in rendered text.
+- [x] Section is legible and scannable (not a wall of text) —
       subheadings and/or short paragraphs used.
-- [ ] Content cross-checked against `main.tex` for factual accuracy
+- [x] Content cross-checked against `main.tex` for factual accuracy
       (this is **Checkpoint B** material — flag for user review before
       finalizing across all three content sections).
 

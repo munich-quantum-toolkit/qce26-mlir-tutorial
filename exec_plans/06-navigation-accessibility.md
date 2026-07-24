@@ -53,13 +53,13 @@ framework" constraint from `AGENTS.md`.
 
 ## Acceptance Criteria
 
-- [ ] Clicking nav links scrolls smoothly to the correct section,
+- [x] Clicking nav links scrolls smoothly to the correct section,
       with content not obscured by the sticky nav.
-- [ ] Page is usable and visually correct at mobile, tablet, and
+- [x] Page is usable and visually correct at mobile, tablet, and
       desktop widths.
-- [ ] Passes a basic accessibility check (manual keyboard nav +
+- [x] Passes a basic accessibility check (manual keyboard nav +
       contrast check); no major WCAG AA violations.
-- [ ] No external dependencies (fonts/CDNs/JS libraries) were
+- [x] No external dependencies (fonts/CDNs/JS libraries) were
       introduced without explicit user approval.
 
 ## Out of Scope

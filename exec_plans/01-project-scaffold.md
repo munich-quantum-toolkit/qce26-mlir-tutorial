@@ -44,14 +44,14 @@ single stylesheet and an optional favicon/asset folder.
 
 ## Acceptance Criteria
 
-- [ ] `index.html` validates as HTML5 (e.g., via W3C validator or
+- [x] `index.html` validates as HTML5 (e.g., via W3C validator or
       `tidy`), contains the three placeholder sections with correct
       ids.
-- [ ] `style.css` exists and is linked correctly from `index.html`.
-- [ ] No build tool config files were introduced.
-- [ ] Site loads via a simple local HTTP server with no 404s for
+- [x] `style.css` exists and is linked correctly from `index.html`.
+- [x] No build tool config files were introduced.
+- [x] Site loads via a simple local HTTP server with no 404s for
       linked assets.
-- [ ] `README.md` created with minimal, accurate description.
+- [x] `README.md` created with minimal, accurate description.
 
 ## Out of Scope
 

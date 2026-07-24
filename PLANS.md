@@ -32,12 +32,12 @@ detailed steps and acceptance criteria.
 
 | # | Plan file | Description                                                                         | Status |
 |---|-----------|-------------------------------------------------------------------------------------|--------|
-| 1 | [`exec_plans/01-project-scaffold.md`](exec_plans/01-project-scaffold.md) | Minimal directory/file scaffold (`index.html`, `assets/css/style.css`, `README.md`) | ☐ Not started |
-| 2 | [`exec_plans/02-design-system.md`](exec_plans/02-design-system.md) | TUM-inspired color palette, typography, spacing, base layout, nav bar               | ☐ Not started |
-| 3 | [`exec_plans/03-content-about.md`](exec_plans/03-content-about.md) | "About the Tutorial" section content + markup                                       | ☐ Not started |
-| 4 | [`exec_plans/04-content-schedule.md`](exec_plans/04-content-schedule.md) | "Schedule" section content + markup (two-session tables)                            | ☐ Not started |
-| 5 | [`exec_plans/05-content-organizers.md`](exec_plans/05-content-organizers.md) | "Organizers" section content + markup (instructor bios)                             | ☐ Not started |
-| 6 | [`exec_plans/06-navigation-accessibility.md`](exec_plans/06-navigation-accessibility.md) | Sticky nav, smooth scroll, mobile menu, responsive & accessibility pass             | ☐ Not started |
+| 1 | [`exec_plans/01-project-scaffold.md`](exec_plans/01-project-scaffold.md) | Minimal directory/file scaffold (`index.html`, `assets/css/style.css`, `README.md`) | ☑ Done |
+| 2 | [`exec_plans/02-design-system.md`](exec_plans/02-design-system.md) | TUM-inspired color palette, typography, spacing, base layout, nav bar               | ☑ Done |
+| 3 | [`exec_plans/03-content-about.md`](exec_plans/03-content-about.md) | "About the Tutorial" section content + markup                                       | ☑ Done |
+| 4 | [`exec_plans/04-content-schedule.md`](exec_plans/04-content-schedule.md) | "Schedule" section content + markup (two-session tables)                            | ☑ Done |
+| 5 | [`exec_plans/05-content-organizers.md`](exec_plans/05-content-organizers.md) | "Organizers" section content + markup (instructor bios)                             | ☑ Done |
+| 6 | [`exec_plans/06-navigation-accessibility.md`](exec_plans/06-navigation-accessibility.md) | Sticky nav, smooth scroll, mobile menu, responsive & accessibility pass             | ☑ Done |
 
 Status legend: ☐ Not started · ◐ In progress · ☑ Done
 

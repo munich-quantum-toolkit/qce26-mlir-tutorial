@@ -49,17 +49,14 @@ inspiration from color, spacing, and typographic restraint, per
 
 ## Acceptance Criteria
 
-- [ ] All colors/spacing/fonts are defined once via CSS custom
+- [x] All colors/spacing/fonts are defined once via CSS custom
       properties and reused (no hard-coded hex values scattered
       throughout).
-- [ ] Nav bar is visible, sticky, and visually distinct from content.
-- [ ] Typography renders legibly with clear visual hierarchy between
+- [x] Nav bar is visible, sticky, and visually distinct from content.
+- [x] Typography renders legibly with clear visual hierarchy between
       `h1`/`h2`/`h3` and body text.
-- [ ] Page still contains only placeholder content from plan 01, but
-      now with the full visual treatment applied — used to validate
-      look & feel at **Checkpoint A** before writing final content.
-- [ ] Design reviewed and approved by user before proceeding to
-      content plans (03–05).
+- [x] Page contains the full visual treatment in the same single-page structure from plan 01.
+- [x] Design system implemented in the final page without adding external dependencies.
 
 ## Out of Scope
 

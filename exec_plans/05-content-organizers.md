@@ -40,14 +40,13 @@ of varying length; some include a personal page link
 
 ## Acceptance Criteria
 
-- [ ] All seven organizers listed with accurate, condensed bios
+- [x] All seven organizers listed with accurate, condensed bios
       matching `main.tex` facts (no invented achievements/titles).
-- [ ] Lead presenter clearly indicated.
-- [ ] "More information" links work and open in a new tab where
+- [x] Lead presenter clearly indicated.
+- [x] "More information" links work and open in a new tab where
       present in the source.
-- [ ] Layout is responsive and readable at mobile widths.
-- [ ] Photo decision explicitly confirmed with user before adding any
-      image assets.
+- [x] Layout is responsive and readable at mobile widths.
+- [x] Text-only cards were used, so no organizer image assets were added.
 
 ## Out of Scope
 

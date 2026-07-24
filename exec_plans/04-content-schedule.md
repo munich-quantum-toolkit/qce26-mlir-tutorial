@@ -34,13 +34,13 @@ Source content in `main.tex`.
 
 ## Acceptance Criteria
 
-- [ ] Both session tables render correctly and match the timing/
+- [x] Both session tables render correctly and match the timing/
       content in `main.tex` exactly.
-- [ ] Tables are responsive (no horizontal overflow breaking layout
+- [x] Tables are responsive (no horizontal overflow breaking layout
       on mobile widths ~360px).
-- [ ] Date/time/location either accurately included or explicitly
+- [x] Date/time/location either accurately included or explicitly
       marked as TODO — never fabricated.
-- [ ] Deliverables note included after the schedule tables.
+- [x] Deliverables note included after the schedule tables.
 
 ## Out of Scope
 
