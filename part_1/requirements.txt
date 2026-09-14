@@ -11,3 +11,4 @@ qiskit[visualization]~=2.5.0
 jupyterlab
 mlir-pygments>=1
 openqasm-pygments>=0.2
+tornado==6.5.8
