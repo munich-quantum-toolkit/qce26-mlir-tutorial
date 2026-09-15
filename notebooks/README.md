@@ -1,7 +1,6 @@
-# Part 1
+# Notebooks
 
-This directory contains everything for you to take part in Part 1 of the
-tutorial.
+This directory contains everything for you to take part in the tutorial.
 
 ## Run the notebooks
 
