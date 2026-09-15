@@ -1,0 +1,11 @@
+line-length = 120
+namespace-packages = [ "mqt" ]
+src = [ "python" ]
+preview = true
+fix = true
+unsafe-fixes = true
+show-fixes = true
+
+[format]
+preview = true
+docstring-code-format = true

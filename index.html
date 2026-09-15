@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>QCE'26 Tutorial | MLIR for Quantum-Classical Compilation</title>
     <meta
       name="description"
       content="QCE'26 tutorial website for MLIR for Quantum-Classical Compilation: Building a Future-Proof Compilation Framework."
-    >
-    <link rel="stylesheet" href="assets/css/style.css">
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230065BD'/%3E%3Cpath d='M17 20h30v8H36v20h-8V28H17z' fill='white'/%3E%3C/svg%3E"
-    >
+    />
   </head>
   <body>
     <header class="site-header">
@@ -29,10 +29,14 @@
 
       <div class="container hero">
         <p class="eyebrow">Quantum-Classical Compilation Tutorial</p>
-        <h1>MLIR for Quantum-Classical Compilation: Building a Future-Proof Compilation Framework</h1>
+        <h1>
+          MLIR for Quantum-Classical Compilation: Building a Future-Proof
+          Compilation Framework
+        </h1>
         <p class="hero-summary">
-          A single-page overview of the QCE'26 tutorial on MLIR fundamentals, dual-dialect design,
-          and backend-aware compilation workflows for hybrid quantum-classical systems.
+          A single-page overview of the QCE'26 tutorial on MLIR fundamentals,
+          dual-dialect design, and backend-aware compilation workflows for
+          hybrid quantum-classical systems.
         </p>
       </div>
     </header>
@@ -43,20 +47,25 @@
           <h2 id="about-heading">About the Tutorial</h2>
           <div class="section-copy">
             <p class="section-lead">
-              Many quantum compilation frameworks use a <em>quantum-first</em> approach. As hybrid
-              classical-quantum programs become more common, especially for quantum error correction,
-              those approaches struggle to integrate classical control flow and optimizations
-              effectively. This tutorial introduces a <em>classical-first</em> approach built on
-              Multi-Level Intermediate Representations (MLIR), covering fundamentals, dual-dialect
-              design, canonicalization, conversion passes, and backend-aware transformations through
-              practical examples drawn from the Munich Quantum Toolkit ecosystem.
+              Many quantum compilation frameworks use a
+              <em>quantum-first</em> approach. As hybrid classical-quantum
+              programs become more common, especially for quantum error
+              correction, those approaches struggle to integrate classical
+              control flow and optimizations effectively. This tutorial
+              introduces a <em>classical-first</em> approach built on
+              Multi-Level Intermediate Representations (MLIR), covering
+              fundamentals, dual-dialect design, canonicalization, conversion
+              passes, and backend-aware transformations through practical
+              examples drawn from the Munich Quantum Toolkit ecosystem.
             </p>
 
             <p>
-              By the end of the tutorial, attendees will understand practical MLIR workflows they
-              can adopt for both research prototypes and production toolchains. The material is
-              presented by the <a href="#organizers">organizing team</a> behind the tutorial and
-              connected to openly available examples for deeper exploration afterward.
+              By the end of the tutorial, attendees will understand practical
+              MLIR workflows they can adopt for both research prototypes and
+              production toolchains. The material is presented by the
+              <a href="#organizers">organizing team</a> behind the tutorial and
+              connected to openly available examples for deeper exploration
+              afterward.
             </p>
           </div>
 
@@ -64,9 +73,10 @@
             <article class="about-card">
               <h3>Who should attend</h3>
               <p>
-                This tutorial is for compiler engineers and quantum software researchers building
-                quantum toolchains and integrating QPUs into classical systems. You should be
-                familiar with quantum circuit basics, compiler IR concepts, and comfortable reading
+                This tutorial is for compiler engineers and quantum software
+                researchers building quantum toolchains and integrating QPUs
+                into classical systems. You should be familiar with quantum
+                circuit basics, compiler IR concepts, and comfortable reading
                 C++ snippets. No prior MLIR experience is required.
               </p>
             </article>
@@ -74,11 +84,12 @@
             <article class="about-card">
               <h3>Why this matters</h3>
               <p>
-                Hybrid quantum-classical applications need compiler infrastructure that scales with
-                structured control flow, backend constraints, and long-lived software stacks. MLIR
-                brings proven compiler engineering practices into quantum software, improving
-                interoperability, maintainability, and the ability to lower cleanly toward QIR,
-                LLVM, simulators, and hardware backends.
+                Hybrid quantum-classical applications need compiler
+                infrastructure that scales with structured control flow, backend
+                constraints, and long-lived software stacks. MLIR brings proven
+                compiler engineering practices into quantum software, improving
+                interoperability, maintainability, and the ability to lower
+                cleanly toward QIR, LLVM, simulators, and hardware backends.
               </p>
             </article>
           </div>
@@ -92,7 +103,7 @@
                   <span>30%</span>
                 </div>
                 <div class="level-bar" aria-hidden="true">
-                  <span class="level-fill" style="width: 30%;"></span>
+                  <span class="level-fill" style="width: 30%"></span>
                 </div>
               </li>
               <li>
@@ -101,7 +112,7 @@
                   <span>50%</span>
                 </div>
                 <div class="level-bar" aria-hidden="true">
-                  <span class="level-fill" style="width: 50%;"></span>
+                  <span class="level-fill" style="width: 50%"></span>
                 </div>
               </li>
               <li>
@@ -110,7 +121,7 @@
                   <span>20%</span>
                 </div>
                 <div class="level-bar" aria-hidden="true">
-                  <span class="level-fill" style="width: 20%;"></span>
+                  <span class="level-fill" style="width: 20%"></span>
                 </div>
               </li>
             </ul>
@@ -123,12 +134,14 @@
           <h2 id="schedule-heading">Schedule</h2>
           <!-- TODO: confirm date/time/location -->
           <p class="section-lead">
-            Two 90-minute sessions covering fundamentals through advanced backend-aware
-            transformations.
+            Two 90-minute sessions covering fundamentals through advanced
+            backend-aware transformations.
           </p>
 
           <article class="schedule-block">
-            <h3>Session 1: MLIR Fundamentals and Dual-Dialect Design (90 min)</h3>
+            <h3>
+              Session 1: MLIR Fundamentals and Dual-Dialect Design (90 min)
+            </h3>
             <div class="table-scroll">
               <table>
                 <thead>
@@ -140,23 +153,39 @@
                 <tbody>
                   <tr>
                     <td>0–10</td>
-                    <td>Opening motivation: limitations of quantum-first IRs; why MLIR and a classical-first mindset matter.</td>
+                    <td>
+                      Opening motivation: limitations of quantum-first IRs; why
+                      MLIR and a classical-first mindset matter.
+                    </td>
                   </tr>
                   <tr>
                     <td>10–30</td>
-                    <td>MLIR fundamentals: dialects, ops, types, attributes, TableGen basics, canonicalization and pass infrastructure.</td>
+                    <td>
+                      MLIR fundamentals: dialects, ops, types, attributes,
+                      TableGen basics, canonicalization and pass infrastructure.
+                    </td>
                   </tr>
                   <tr>
                     <td>30–55</td>
-                    <td>QC dialect: imperative design for hardware mapping; resource management and gate library; TableGen interfaces.</td>
+                    <td>
+                      QC dialect: imperative design for hardware mapping;
+                      resource management and gate library; TableGen interfaces.
+                    </td>
                   </tr>
                   <tr>
                     <td>55–75</td>
-                    <td>QCO dialect: functional design for optimization; linear types and explicit dataflow; encoding DAGs natively.</td>
+                    <td>
+                      QCO dialect: functional design for optimization; linear
+                      types and explicit dataflow; encoding DAGs natively.
+                    </td>
                   </tr>
                   <tr>
                     <td>75–90</td>
-                    <td>Design tradeoffs and engineering patterns: when to use imperative vs. functional; testing and maintainability practices.</td>
+                    <td>
+                      Design tradeoffs and engineering patterns: when to use
+                      imperative vs. functional; testing and maintainability
+                      practices.
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -164,7 +193,9 @@
           </article>
 
           <article class="schedule-block">
-            <h3>Session 2: Conversions, Optimizations, and Lowering (90 min)</h3>
+            <h3>
+              Session 2: Conversions, Optimizations, and Lowering (90 min)
+            </h3>
             <div class="table-scroll">
               <table>
                 <thead>
@@ -176,23 +207,42 @@
                 <tbody>
                   <tr>
                     <td>0–15</td>
-                    <td>Bridging QC and QCO: linearization mechanics and bufferization strategy; state tracking patterns.</td>
+                    <td>
+                      Bridging QC and QCO: linearization mechanics and
+                      bufferization strategy; state tracking patterns.
+                    </td>
                   </tr>
                   <tr>
                     <td>15–40</td>
-                    <td>Canonicalization and pattern rewrites: inverse-pair cancellation and alloc/dealloc removal; TableGen and PatternRewriter idioms.</td>
+                    <td>
+                      Canonicalization and pattern rewrites: inverse-pair
+                      cancellation and alloc/dealloc removal; TableGen and
+                      PatternRewriter idioms.
+                    </td>
                   </tr>
                   <tr>
                     <td>40–65</td>
-                    <td>Backend-aware transformations: mapping/routing concepts (QMAP example), handling device constraints and structured control flow; integration points for backend passes.</td>
+                    <td>
+                      Backend-aware transformations: mapping/routing concepts
+                      (QMAP example), handling device constraints and structured
+                      control flow; integration points for backend passes.
+                    </td>
                   </tr>
                   <tr>
                     <td>65–80</td>
-                    <td>Lowering to QIR/LLVM: lowering strategy, preserving semantics, and preparing for execution on simulators or hardware.</td>
+                    <td>
+                      Lowering to QIR/LLVM: lowering strategy, preserving
+                      semantics, and preparing for execution on simulators or
+                      hardware.
+                    </td>
                   </tr>
                   <tr>
                     <td>80–90</td>
-                    <td>Resources, next steps, and Q&amp;A: pointer to the MQT repository and the hands-on MLIR tutorial; recommended reading and extension ideas.</td>
+                    <td>
+                      Resources, next steps, and Q&amp;A: pointer to the MQT
+                      repository and the hands-on MLIR tutorial; recommended
+                      reading and extension ideas.
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -200,9 +250,10 @@
           </article>
 
           <p class="schedule-note">
-            <strong>Deliverables:</strong> After the session, you&apos;ll receive a slide deck with
-            embedded code excerpts and links to the Munich Quantum Toolkit core repository,
-            including a hands-on MLIR tutorial for self-paced practice.
+            <strong>Deliverables:</strong> After the session, you&apos;ll
+            receive a slide deck with embedded code excerpts and links to the
+            Munich Quantum Toolkit core repository, including a hands-on MLIR
+            tutorial for self-paced practice.
           </p>
         </div>
       </section>
@@ -219,84 +270,114 @@
                 <span class="badge">Lead Presenter</span>
               </div>
               <p>
-                Doctoral researcher at TUM working on quantum computing, compiler design, and HPC.
-                His work focuses on scalable, hardware-aware compilation for neutral-atom quantum
-                computers, including state-of-the-art placement and routing techniques. He also
-                co-develops the Quantum Device Management Interface for seamless hardware
-                integration into HPC stacks and has authored 20+ publications.
+                Doctoral researcher at TUM working on quantum computing,
+                compiler design, and HPC. His work focuses on scalable,
+                hardware-aware compilation for neutral-atom quantum computers,
+                including state-of-the-art placement and routing techniques. He
+                also co-develops the Quantum Device Management Interface for
+                seamless hardware integration into HPC stacks and has authored
+                20+ publications.
               </p>
-              <p><a href="https://www.cda.cit.tum.de/team/stade/" target="_blank" rel="noopener">More information about Yannick Stade</a></p>
+              <p>
+                <a
+                  href="https://www.cda.cit.tum.de/team/stade/"
+                  target="_blank"
+                  rel="noopener"
+                  >More information about Yannick Stade</a
+                >
+              </p>
             </article>
 
             <article class="organizer-card">
               <h3>Lukas Burgholzer</h3>
               <p>
-                Postdoc at TUM and CTO of the Munich Quantum Software Company. He is one of the
-                lead architects of the Munich Quantum Toolkit and Munich Quantum Software Stack, and
-                he focuses on building software that is genuinely useful for the quantum computing
-                community. His work has been recognized with the EDAA Outstanding Dissertation Award
-                and the Heinz Zemanek Prize.
+                Postdoc at TUM and CTO of the Munich Quantum Software Company.
+                He is one of the lead architects of the Munich Quantum Toolkit
+                and Munich Quantum Software Stack, and he focuses on building
+                software that is genuinely useful for the quantum computing
+                community. His work has been recognized with the EDAA
+                Outstanding Dissertation Award and the Heinz Zemanek Prize.
               </p>
-              <p><a href="https://www.cda.cit.tum.de/team/burgholzer/" target="_blank" rel="noopener">More information about Lukas Burgholzer</a></p>
+              <p>
+                <a
+                  href="https://www.cda.cit.tum.de/team/burgholzer/"
+                  target="_blank"
+                  rel="noopener"
+                  >More information about Lukas Burgholzer</a
+                >
+              </p>
             </article>
 
             <article class="organizer-card">
               <h3>Matthias Reumann</h3>
               <p>
-                Doctoral candidate at TUM and contributor to the Munich Quantum Toolkit project. He
-                works on transpiling hybrid quantum-classical programs within MLIR and is passionate
-                about production-ready, well-documented open-source software that reaches beyond
-                research prototypes.
+                Doctoral candidate at TUM and contributor to the Munich Quantum
+                Toolkit project. He works on transpiling hybrid
+                quantum-classical programs within MLIR and is passionate about
+                production-ready, well-documented open-source software that
+                reaches beyond research prototypes.
               </p>
             </article>
 
             <article class="organizer-card">
               <h3>Daniel Haag</h3>
               <p>
-                Doctoral researcher at TUM and core MQT developer with a background in physics. He
-                previously worked as a software engineer at planqc and now focuses on robust
-                compilation frameworks and exchange formats that improve interoperability across
-                quantum software stack layers. He contributed significantly to the design and
-                development of the MQT Compiler Collection.
+                Doctoral researcher at TUM and core MQT developer with a
+                background in physics. He previously worked as a software
+                engineer at planqc and now focuses on robust compilation
+                frameworks and exchange formats that improve interoperability
+                across quantum software stack layers. He contributed
+                significantly to the design and development of the MQT Compiler
+                Collection.
               </p>
             </article>
 
             <article class="organizer-card">
               <h3>Damian Rovara</h3>
               <p>
-                Doctoral researcher at TUM working on higher-level abstractions for quantum
-                developers, with a focus on domain-specific languages and quantum program
-                representations. He developed an open-source debugging framework that combines
-                static analysis, workflow optimization, and runtime evaluation, and he investigates
-                structured control flow for future-proof quantum software. His work earned a 2nd
-                Place Best Paper award at QCE.
+                Doctoral researcher at TUM working on higher-level abstractions
+                for quantum developers, with a focus on domain-specific
+                languages and quantum program representations. He developed an
+                open-source debugging framework that combines static analysis,
+                workflow optimization, and runtime evaluation, and he
+                investigates structured control flow for future-proof quantum
+                software. His work earned a 2nd Place Best Paper award at QCE.
               </p>
             </article>
 
             <article class="organizer-card">
               <h3>Patrick Hopf</h3>
               <p>
-                Doctoral candidate at TUM researching quantum circuit compilation and compiler
-                design. His background spans physics, computer science, and quantum science and
-                technology, with experience across academia and industry including LRZ, RIKEN, and
-                MQSC. He contributes to QuTiP and MQT and is active in teaching, mentorship, and
-                community-building initiatives such as PushQuantum and the Munich Quantum Software
-                Forum.
+                Doctoral candidate at TUM researching quantum circuit
+                compilation and compiler design. His background spans physics,
+                computer science, and quantum science and technology, with
+                experience across academia and industry including LRZ, RIKEN,
+                and MQSC. He contributes to QuTiP and MQT and is active in
+                teaching, mentorship, and community-building initiatives such as
+                PushQuantum and the Munich Quantum Software Forum.
               </p>
             </article>
 
             <article class="organizer-card">
-              <h3>Robert Wille</h3>
+              <h3>Robert Will</h3>
               <p>
-                Full and Distinguished Professor at TUM, Co-Founder and CEO of the Munich Quantum
-                Software Company, and Scientific Director at the Software Competence Center
-                Hagenberg. For more than 15 years, he has advanced quantum computing through
-                foundational software and design automation, earning awards including Best Paper
-                Awards, the DAC Under-40 Innovator Award, and a Google Research Award. He has
-                published 400+ papers and is deeply involved in Munich Quantum Valley and ERC-funded
-                research.
+                Full and Distinguished Professor at TUM, Co-Founder and CEO of
+                the Munich Quantum Software Company, and Scientific Director at
+                the Software Competence Center Hagenberg. For more than 15
+                years, he has advanced quantum computing through foundational
+                software and design automation, earning awards including Best
+                Paper Awards, the DAC Under-40 Innovator Award, and a Google
+                Research Award. He has published 400+ papers and is deeply
+                involved in Munich Quantum Valley and ERC-funded research.
               </p>
-              <p><a href="https://www.cda.cit.tum.de/team/wille/" target="_blank" rel="noopener">More information about Robert Wille</a></p>
+              <p>
+                <a
+                  href="https://www.cda.cit.tum.de/team/wille/"
+                  target="_blank"
+                  rel="noopener"
+                  >More information about Robert Will</a
+                >
+              </p>
             </article>
           </div>
         </div>
@@ -306,8 +387,8 @@
     <footer class="site-footer">
       <div class="container">
         <p>
-          QCE&apos;26 tutorial website for the Technical University of Munich and Munich Quantum
-          Toolkit community.
+          QCE&apos;26 tutorial website for the Technical University of Munich
+          and Munich Quantum Toolkit community.
         </p>
       </div>
     </footer>
